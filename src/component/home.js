@@ -1,13 +1,14 @@
 import React from 'react';
+import {Button ,ButtonToolbar} from 'react-bootstrap'
 
 class Home   extends React.Component{
     render()
     {
        return(
-            <div>
-               <h1>Hello React Js</h1>
-                
-                </div>
+         <ButtonToolbar>
+         <Button variant="primary">Primary</Button>
+        
+       </ButtonToolbar>
         
        )
         
