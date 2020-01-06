@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Home from './component/home'
-
+import Routers from './Routers/routes'
+import { Provider } from 'react-redux'
+import store from './Store';
 function App() {
   return (
     <div className="App">
@@ -20,7 +21,10 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Home></Home>
+      <Provider store={store}>
+      <Routers></Routers>
+      </Provider>
+     
     </div>
   );
 }
