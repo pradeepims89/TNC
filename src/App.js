@@ -4,6 +4,8 @@ import './App.css';
 import Routers from './Routers/routes'
 import { Provider } from 'react-redux'
 import store from './Store';
+
+import {UserProvider} from './component/userContext'
 function App() {
   return (
     <div className="App">
@@ -21,9 +23,12 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Provider store={store}>
+      {/* <Provider store={store}> */}
+      {/* <UserProvider  value="pradeep kumar" > */}
       <Routers></Routers>
-      </Provider>
+      {/* </UserProvider> */}
+      
+      {/* </Provider> */}
      
     </div>
   );
