@@ -6,7 +6,7 @@ class Home extends React.Component {
     return (
       <div>
         <h2>{this.props._UserName}</h2>
-        <h4> This is the home page</h4>
+        <h4> This is the home page ok</h4>
       </div>
     )
 
